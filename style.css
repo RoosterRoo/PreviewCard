@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-size: 15px;
+}
+
+.container {
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.columns {
+    width: 60%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    padding: 1em;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 0.75em;
+    border-bottom-left-radius: 0.75em;
+}
+
+.suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+.info {
+    height: 80%;
+}
+
+.title {
+    font-family: 'Big Shoulders Display', sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.description {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.80rem;
+}
+
+.btn {
+    border: none;
+    border-radius: 1.25em;
+    font-size: 0.80rem;
+    padding: 0.5em 1.125em;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.sedan .btn {
+    color: hsl(31, 77%, 52%);
+}
+
+.suv .btn {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury .btn {
+    color: hsl(179, 100%, 13%);
+}
+
+.sedan .btn:hover, .luxury .btn:active {
+    background-color: hsl(31, 77%, 52%);
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.suv .btn:hover, .luxury .btn:active {
+    background-color: hsl(184, 100%, 22%);
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.luxury .btn:hover, .luxury .btn:active {
+    background-color: hsl(179, 100%, 13%);
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+@media (max-width: 425px) {
+    body {
+        font-size: 45px;
+    }
+
+    .container {
+        color: #fff;
+        display: flex;
+        height: 100%;
+        margin: 0.25em 0.1em;
+    }
+
+    .columns {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .sedan {
+        border-radius: 0.5em 0.5em 0 0;
+    }
+
+    .luxury {
+        border-radius: 0 0 0.5em 0.5em;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+}
